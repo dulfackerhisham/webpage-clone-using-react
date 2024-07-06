@@ -1,42 +1,84 @@
-#root {
-  max-width: 1280px;
+:root {
+  --red: #d01c28
+}
+
+* {
+  margin: 0;
+}
+
+.logo > img {
+  width: 100px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  height: 72px;
+  max-width: 1288px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  height: 72px;
+  align-items: center;
+  
+}
+.nav-bar > ul {
+  display: flex;
+  list-style: none;
+}
+.nav-bar > ul > li {
+  padding: 0 6px;
+}
+.button {
+  all: unset;
+  padding: 6px 16px;
+  background-color: red;
+  height: 32px;
+  color: white;
+  font-weight: 500;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.brand-icons img{
+  width: 30px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  display: flex;
+  max-width: 1288px;
+  margin: 0 auto;
+  align-items: center;
+  height: calc(100vh -72px);
+  
+}
+.main-img img{
+  width: 700px;
+}
+.main-content h1{
+  font-weight: 800;
+  font-size: 108px;
+
+}
+.main-content p{
+  font-weight: 600;
+  color: gray;
+  max-width: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main-btns {
+  display: flex;
+  gap: 35px;
+  margin-top: 5px;
+}
+.sec-btn{
+  background: transparent;
+  color: gray;
+  border: 1px solid;
 }
 
-.card {
-  padding: 2em;
+.shopping {
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.brand-icons {
+  display: flex;
+  gap: 16px;
 }
